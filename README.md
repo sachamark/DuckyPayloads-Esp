@@ -29,7 +29,7 @@ Ves al directorio del proyecto
 Instala las dependencias
 
 ```bash
-  sudo dnf install python3-tkinter
+  sudo apt/dnf/pacman install python3-tkinter
 ```
 
 Abre la herramienta
