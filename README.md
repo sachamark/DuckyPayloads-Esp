@@ -2,6 +2,8 @@
 
 ¡Con DuckyPayloads Español se acabó el problema!
 
+![](Img.jpg)
+
 Esta herramienta escrita en python que usa tkinter, te permite adaptar tus payloads para que funcionen a la perfección en sistemas operativos con la distribución de teclado en español.
 
 ## ¿Cómo funciona?
