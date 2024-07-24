@@ -17,13 +17,13 @@ DuckyPayloads Español lo adapta automáticamente.
 Clona el proyecto
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/sachamark/DuckyPayloads-Esp
 ```
 
 Ves al directorio del proyecto
 
 ```bash
-  cd my-project
+  cd DuckyPayloads-Esp
 ```
 
 Instala las dependencias
@@ -37,5 +37,3 @@ Abre la herramienta
 ```bash
   python DuckyPayloads-esp.py
 ```
-
-Selecciona el Payload y se guardara como ejemplo-esp.py
