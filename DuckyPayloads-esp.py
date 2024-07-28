@@ -3,27 +3,121 @@ from tkinter import filedialog
 import os
 
 us_to_es_map = {
-    '@': '"',
-    '#': '·',
-    '^': '&',
-    '&': '/',
-    '*': '(',
-    '(': ')',
-    ')': '=',
-    '-': "'",
-    '=': '¡',
-    '_': '?',
-    '{': '^',
-    '}': '*',
-    '|': 'Ç',
-    ';': 'ñ',
-    ':': 'Ñ',
-    "'": '´',
-    '"': '¨',
-    '<': ';',
-    '>': ':',
-    '/': '-',
-    '?': '_'
+    '"':'@',
+    '#':'·',
+    '^':'{',
+    '&':'^',
+    '*':'\\',
+    '(':'*',
+    ')':'(',
+    '=':')',
+    '_':'§',
+    '|': '!',
+    ';':'<',
+    ':':'>',
+    '/':'&',
+    '-':"/",
+    "'":'-',
+    '?':'_',
+    '§':'?',
+    '}':"""
+DELAY 300
+GUI r
+DELAY 100
+STRING charmap
+DELAY 100
+ENTER
+DELAY 600
+TAB
+TAB
+DELAY 100
+RIGHTARROW
+REPEAT 91
+DELAY 100
+TAB
+TAB
+DELAY 100
+ENTER
+DELAY 100
+ALT F4
+DELAY 300
+CTRL V
+DELAY 100
+STRING """,
+    '{':"""
+DELAY 300
+GUI r
+DELAY 100
+STRING charmap
+DELAY 100
+ENTER
+DELAY 600
+TAB
+TAB
+DELAY 100
+RIGHTARROW
+REPEAT 89
+DELAY 100
+TAB
+TAB
+DELAY 100
+ENTER
+DELAY 100
+ALT F4
+DELAY 300
+CTRL V
+DELAY 100
+STRING """,
+    '[':"""
+DELAY 300
+GUI r
+DELAY 100
+STRING charmap
+DELAY 100
+ENTER
+DELAY 600
+TAB
+TAB
+DELAY 100
+RIGHTARROW
+REPEAT 57
+DELAY 100
+TAB
+TAB
+DELAY 100
+ENTER
+DELAY 100
+ALT F4
+DELAY 300
+CTRL V
+DELAY 100
+STRING """,
+    ']': """
+DELAY 300
+GUI r
+DELAY 100
+STRING charmap
+DELAY 100
+ENTER
+DELAY 600
+TAB
+TAB
+DELAY 100
+RIGHTARROW
+REPEAT 59
+DELAY 100
+TAB
+TAB
+DELAY 100
+ENTER
+DELAY 100
+ALT F4
+DELAY 300
+CTRL V
+DELAY 100
+STRING """,
+    '+':']',
+    '`':'['
 }
 
 def replace(content):
@@ -55,7 +149,7 @@ def main():
     root = tk.Tk()
     root.withdraw()
 
-    input_file = filedialog.askopenfilename(title="Selecciona el archivo de entrada")
+    input_file = filedialog.askopenfilename(title="Selecciona el payload.")
     if not input_file:
         print("No se seleccionó ningún archivo.")
         return
@@ -64,4 +158,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
