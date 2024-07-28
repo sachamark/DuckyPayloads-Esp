@@ -22,7 +22,7 @@ el payload para que mas se abra cerrarlo con un ALT F4, ejemplo a continuacion:
 ```bash
   DELAY 2000      //Esperar 2000 milisegundos
   STRING ejemplo  //Escribir ejemplo
-  DELAY 3500      // Esperar 3500 milisegundos
+  DELAY 3500      //Esperar 3500 milisegundos
   ALT F4          //Aqui una vez haigan pasado los 5500 milisegundos se  abrira el explorador de archivos y se cerrara.
 ```
 
